@@ -1,0 +1,54 @@
+void main() {
+  
+  var sub1 = 90;
+  var sub2 = 87;
+  var sub3 = 85;
+  var sub4 = 82;
+  var sub5 = 91;
+  
+  var totalmarks = 500;
+  var securedmarks = (sub1 + sub2 + sub3 + sub4 + sub5);
+  var percentage = (securedmarks/totalmarks)*100;
+  var grade ;
+  
+  if(percentage>90){
+    grade = "A+";
+  }else if(percentage>80){
+    grade = "A";
+  }else if(percentage>70){
+    grade = "B+";
+  }else if (percentage>60){
+    grade = "B";
+  }else if(percentage>50){
+    grade ="c+";
+  }else if(percentage>40){
+    grade ="c";
+  }else{
+    grade = "Fail";
+  }
+  
+  var studentname = ("SHAHEER");
+  
+  var studentclass = 10;
+  
+  var studentfathername = ("REHAN SHAKIR");
+  
+  var subject1=("MATHS");
+  
+  var subject2=("PHYSICS");
+  
+  var subject3=("ENGLISH");
+  
+  var subject4=("URDU");
+  
+  var subject5=("ISLAMIAT");
+  
+  
+  print ("(1)Name:$studentname \n(2)Class:$studentclass \n(3)Fahtername:$studentfathername \n----------------------------------------------");
+  print ("(1)Subject 1: $subject1 \n(*) ---Marks $sub1/100 \n(2)Subject 2: $subject2 \n(*) ---Marks $sub2/100 \n(3)Subject 3: $subject3 \n(*) ---Marks $sub3/100 \n(4)Subject 4: $subject4 \n(*) ---Marks $sub4/100 \n(5)Subject 5: $subject5 \n(*) ---Marks $sub5/100");
+  print ("----------------------------------------------");
+  print ("(1)Total marks: ${totalmarks}");
+  print ("(2)Marks gain; ${securedmarks}");
+  print ("(3)Percentage: ${percentage}% ");
+  print ("(4)Grade: ${grade}");
+}
